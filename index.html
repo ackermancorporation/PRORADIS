@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE PRORADIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class ="container">
+        <div class="first-container">
+          <div class ="header">
+            <div class="header-logo">TESTE PRORADIS</div>
+            <ul>
+              
+              <li class = "header-link"><a href=google.com>QUESTÃO 1</a></li>
+              <li class="header-link"><a href="google.com">QUESTÃO 2</a></li>
+              <li class="header-link"><a href="google.com">QUESTÃO 3</a></li>
+            </ul>
+
+        </div>
+        <div class = "questions-container">
+            <div>
+                <h1> Questão 1</h1>
+                <b>Analise a tabela a seguir e realize e obtenha os respectivos resultados </b></div>
+                <br>
+                <div class = "database_question1"><img src = "database_question1.png"> </div>
+                <br>
+                <b>1.1 Conforme a tabela a cima qual é a Query necessária para exibir apenas a linha do procedimento 'TC ABDOME TOTAL' </b>
+                <br>
+                <div class = "respostas">
+                Pode-se utilizar a seguinte query para exibir apenas a linha do procedimento 'TC ABDOME TOTAL': <br> <br>
+                SELECT * <br>
+                FROM nome_tabela <br>
+                WHERE ProcedureName = 'TC ABDOME TOTAL';
+                </div> <br>
+                <b>1.2 Para realizar a exclusão de todas as linhas é utilizado a função DELETE no
+                    banco de dados, demonstre a estrutura deste comando para realizar a
+                    exclusão de todas as linhas exceto o número de acesso 499270</b> <br>
+                <div class = 'respostas'>
+                    Para deletar conforme o enunciado, pode-se utilizar a query a seguir: <br> <br>
+
+                    DELETE FROM nome_tabela <br>
+                    WHERE AccessionNumber != 499270;
+                </div> <br> <br>
+
+                <h1> Questão 2</h1>
+                <b>Analise a tabela a seguir e realize e obtenha os respectivos resultados </b>
+                <br>
+                <div class = "database_question1"><img src = "database_question1.png"> </div> <br>
+                <b>2.1 Observando que são 2 tabelas diferentes, 'Requests' e 'study' Qual seria a query necessária para ser exibido a linha do número de acesso 499305 das duas tabelas na mesma linha. </b> <br>
+                <div class = 'respostas'>
+                    Pode-se utilizar a seguinte query: <br> <br>
+                    SELECT * <br>
+                    FROM Requests <br>
+                    JOIN study <br>
+                        ON requests.AccessionNumber = study.accession_no;
+
+                </div> <br>
+
+                <h1>Questão 3</h1>
+                <b>Construa o respectivo cabeçalho em CSS e HTML. Pode ser feito da forma que achar mais confortável. </b>
+                <div class = "database_question1"><img src = "cabecalho.png"> </div> <br>
+                <div class = 'respostas'>Segue o cabeçalho replicado usando HTML e CSS: </div><br> <br> <br>
+
+                <div class = 'cabecalho'>
+                    <div class = 'bloco_cinza'>
+                        <div class = 'cdi'><img src = 'cdi2.png'> </div>
+                        <div class = 'endereço'>
+                            Rua Valdir Rabelo, 471 - Centro <br>
+                            Tel: (66) 3401-1299 <br>
+                            Barra dos Garças - MT
+                        </div>
+
+                    </div>
+
+
+                    <div class = 'bloco_branco'>
+                        <div class = 'bloco_azul'>
+                            <div class = 'patient_info'>
+                                <div class = 'info_holder'>
+                                    <div class = 'info'>Paciente</div>
+                                    <div class = 'tag'>{PATIENTNAME}</div>
+                                    <div class = 'info'>Solicitante Dr. (a)</div>
+                                    <div class = 'tag'>{REFDOC}</div>
+                                </div>
+                                <div class = 'info_holder'>
+                                    <div class = 'info'>Dt. Nascimento</div> 
+                                    <div class = 'tag'>{PATIENTBIRTHDATE}</div>
+                                </div>
+
+                                <div class = 'info_holder'>
+                                    <div class = 'info'>Sexo</div> 
+                                    <div class = 'tag'>{PATIENTGENDERDESC}</div>
+                                </div>
+
+                                <div class = 'info_holder'>
+                                    <div class = 'info'>Pedido</div>
+                                    <div class = 'tag'>{ACCESSIONNO}</div>
+                                    <div class = 'info'>Dt. Exame</div>
+                                    <div class = 'tag'>{PROCEDUREDATE}</div>
+                                </div>
+
+                            </div>
+                    
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+        </div>
+    </div>
+</body>
+</html>
