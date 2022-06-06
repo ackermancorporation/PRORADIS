@@ -1,130 +1,118 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-body{
-    height: 100vh;
-    margin:0;
-    font-family: Roboto;
-  
-
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Roboto;
 }
 .first-container {
-    background:#1F2937;
-    padding-left:300px;
-    padding-right:300px;
-    padding-top:7px;
-    padding-bottom:10px;
-    
+  background: #1f2937;
+  padding-left: 300px;
+  padding-right: 300px;
+  padding-top: 7px;
+  padding-bottom: 10px;
 }
 
-ul{
-    list-style-type: none;
-    display: flex;
-    padding:0px;
-    gap:20px;
-    
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  gap: 20px;
 }
 
 .header-logo {
-   
-    font-size:24px;
-    color: #f9faf8;
-    font-weight:bold;
+  font-size: 24px;
+  color: #f9faf8;
+  font-weight: bold;
 }
 
-.header{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-bottom: 10px;
-
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 10px;
 }
 
-a, .text-description{
-    text-decoration: none;
-    
-    font-size:18px;
-    color:#E5E7EB;
+a,
+.text-description {
+  text-decoration: none;
+
+  font-size: 18px;
+  color: #e5e7eb;
 }
 
-h1{
-    color:#E5E7EB;
-
-
+h1 {
+  color: #e5e7eb;
 }
 
-.questions-container{
-        color:#E5E7EB;
-        display:flex;
-        flex-direction: column; 
+.questions-container {
+  color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
 }
 
-img{
-    height: 100%;
-    width: 100%;
+img {
+  height: 100%;
+  width: 100%;
 }
 
-.respostas{
-    border:10px;
-    background: white;
-    color:black;
-    border-radius:3px;
+.respostas {
+  border: 10px;
+  background: white;
+  color: black;
+  border-radius: 3px;
 }
 
-.bloco_branco{
-    padding-left: 80px;
-    padding-right: 80px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+.bloco_branco {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 
-
-
-    background: white;
+  background: white;
 }
 
-.bloco_cinza{
-    display: flex;
-    align-items: center;
-    background:lightgrey;
-    color:black;
-    padding-left: 80px;
-
-    
+.bloco_cinza {
+  display: flex;
+  align-items: center;
+  background: lightgrey;
+  color: black;
+  padding-left: 80px;
 }
-.cdi{
-    height: 15%;
-    width: 15%;
-    margin-right: 15px;
+.cdi {
+  height: 15%;
+  width: 15%;
+  margin-right: 15px;
 }
 
-.bloco_azul{
-    border: solid darkblue 2px;
-    background: white;
-    border-radius: 8px;
-    padding-right: 70px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
-    font-size: 13px;
-    align-items:flex-start;
+.bloco_azul {
+  border: solid darkblue 2px;
+  background: white;
+  border-radius: 8px;
+  padding-right: 70px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  font-size: 13px;
+  align-items: flex-start;
 }
 
-.patient_info{
-    display: flex;
-    justify-content: space-between;
+.patient_info {
+  display: flex;
+  justify-content: space-between;
 }
 
-.info{
-    color:#5d5d5d;
-    font-size:14px;
+.info {
+  color: #5d5d5d;
+  font-size: 14px;
 }
 
-.tag{
-    color:darkblue;
-    font-weight: bold;
+.tag {
+  color: darkblue;
+  font-weight: bold;
 }
 
-.exam_info{
-    display: flex;
-    justify-content: space-between;
-
+.exam_info {
+  display: flex;
+  justify-content: space-between;
 }
